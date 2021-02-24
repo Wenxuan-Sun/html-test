@@ -117,75 +117,16 @@
                         <li><a href="#" class="icon solid fa-comment">128</a></li>
                     </ul>
                 </footer>
-                <!-- COMMENTS POWERBAR: Place it where you want SHARES to be displayed -->
-                <div class="vuukle-powerbar"></div>
-                <!-- COMMENTS WRAPPER: Place it where you want comments to be displayed -->
-                <div id="vuukle-comments"></div>
-                <script type="text/javascript">
-                    var VUUKLE_CONFIG = {
-                        "apiKey": "e323bfa2-2acc-4b54-93aa-6a01e7a3b76d",
-                        "host": "novel.sunwenxuan.top",
-                        "articleId": "!!! GENERATE UNIQUE ID FOR YOUR ARTICLE !!!",
-                        "img": "!!! ARTICLE IMAGE URL !!!",
-                        "tags": "!!! UP TO 3 TAGS SEPARATED BY COMMA !!!",
-                        "url": "https://novel.sunwenxuan.top",
-                        "title": "string",
-                        "author": "string",
-                        "language": "en",
-                        "recommendedArticles": false,
-                        "globalRecommendations": false,
-                        "wideImages": false,
-                        "comments": {
-                            "enabled": true,
-                            "hideRecommendedArticles": false,
-                            "editorOptions": [
-                                "bold",
-                                "italic",
-                                "underline",
-                                "url",
-                                "blockquote",
-                                "code",
-                                "list",
-                                "image",
-                                "gif"
-                            ],
-                            "transliteration": {
-                                "language": "en",
-                                "enabledByDefault": false
-                            },
-                            "hideCommentInputBox": false,
-                            "commentingClosed": false,
-                            "maxChars": 3000,
-                            "countToLoad": 5
-                        },
-                        "emotes": {
-                            "enabled": false,
-                            "hideRecommendedArticles": false,
-                            "size": "80px",
-                            "disable": [
-                                5,
-                                6
-                            ]
-                        },
-                        "powerbar": {
-                            "enabled": true,
-                            "defaultEmote": 1,
-                            "verticalPosition": "10px",
-                            "mode": "horizontal"
-                        }
-                    };
-
-                    //⛔️ DON'T EDIT BELOW THIS LINE
-                    (function() {
-                        var d = document,
-                            s = d.createElement('script');
-
-                        s.src = 'https://cdn.vuukle.com/platform.js';
-                        (d.head || d.body).appendChild(s);
-                    })();
+                <div id="tcomment"></div>
+                <script src="https://cdn.jsdelivr.net/npm/twikoo@1.2.0/dist/twikoo.all.min.js"></script>
+                <script>
+                    twikoo.init({
+                        envId: 'evergarden-9gi0i0je783ecf97',
+                        el: '#tcomment',
+                        // region: 'ap-guangzhou', // 环境地域，默认为 ap-shanghai，如果您的环境地域不是上海，需传此参数
+                        // path: 'window.location.pathname', // 用于区分不同文章的自定义 js 路径，如果您的文章路径不是 location.pathname，需传此参数
+                    })
                 </script>
-
-
             </article>
 
         </div>
