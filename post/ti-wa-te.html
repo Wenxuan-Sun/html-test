@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <script src='//unpkg.com/valine/dist/Valine.min.js'></script>
+    <script src='//cdn.jsdelivr.net/npm/@waline/client/dist/Waline.min.js'></script>
     <title>提瓦特冒险之旅（一）</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
@@ -117,14 +117,15 @@
                         <li><a href="template.html">Next<i class="fas fa-arrow-right"></i></a></li>
                     </ul>
                 </footer>
-                <div id="vcomments"></div>
+                <div id="waline"></div>
                 <script>
-                    new Valine({
-                        el: '#vcomments',
-                        appId: 'dkINJiJijJd0WPNL5IzDvqxR-gzGzoHsz',
-                        appKey: 'rWazTx6gW9zEIYPAGg5idfT1'
-                    })
+                    new Waline({
+                        el: '#waline',
+                        path: location.pathname,
+                        serverURL: 'https://waline-api-delta.vercel.app/'
+                    });
                 </script>
+
             </article>
 
         </div>
