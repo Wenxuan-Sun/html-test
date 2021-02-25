@@ -120,7 +120,14 @@
                         </ul>
                     </div>
                 </div>
-
+                <div id="waline"></div>
+                <script>
+                    new Waline({
+                        el: '#waline',
+                        path: location.pathname,
+                        serverURL: 'https://waline-phi-lime.vercel.app'
+                    });
+                </script>
             </article>
 
         </div>
