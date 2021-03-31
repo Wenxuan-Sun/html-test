@@ -117,14 +117,13 @@
                         <li><a href="#" class="icon solid fa-comment">128</a></li>
                     </ul>
                 </footer>
-                <div id="tcomment"></div>
-                <script src="https://cdn.jsdelivr.net/npm/twikoo@1.2.0/dist/twikoo.all.min.js"></script>
+                <div id="vcomments"></div>
+                <script src='//unpkg.com/valine/dist/Valine.min.js'></script>
                 <script>
-                    twikoo.init({
-                        envId: 'evergarden-9gi0i0je783ecf97',
-                        el: '#tcomment',
-                        // region: 'ap-guangzhou', // 环境地域，默认为 ap-shanghai，如果您的环境地域不是上海，需传此参数
-                        // path: 'window.location.pathname', // 用于区分不同文章的自定义 js 路径，如果您的文章路径不是 location.pathname，需传此参数
+                    new Valine({
+                        el: '#vcomments',
+                        appId: 'xDsGB9azB1JYb8iX3f5MttOm-MdYXbMMI',
+                        appKey: 'AIiO1XCicO0hBcXpRDjbBpN8'
                     })
                 </script>
                 <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=1492276425&auto=1&height=66"></iframe>
